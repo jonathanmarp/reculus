@@ -5,8 +5,7 @@
 // This Server For Database Memory
 
 #include "header/reculus.hpp"
-
-#define PORT 6045
+#include "header/config.hpp"
 
 int main(int argc, char const *argv[]) 
 { 

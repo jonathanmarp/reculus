@@ -1,23 +1,25 @@
-// Client side C/C++ program to demonstrate Socket programming 
-#include <stdio.h> 
-#include <sys/socket.h> 
-#include <arpa/inet.h> 
-#include <unistd.h> 
-#include <string.h> 
-#define PORT 8080 
+// This For Project reculus Database Memory
+// This First Play In App
+// Server side C/C++ program to demonstrate Socket programming 
+// Copyright 2020 - 2025
+// This Server For Database Memorylient side C/C++ program to demonstrate Socket programming
+
+#include "../header/reculus.hpp"
+#include "../header/config.hpp"
 
 int main(int argc, char const *argv[]) 
 { 
+	std::cout << "Reculus{CLIENT} : Start Now" << std::endl;
 	int sock = 0, valread; 
 	struct sockaddr_in serv_addr; 
-	char *hello = "Hello from client"; 
+	const char *hello = "Hello from client"; 
 	char buffer[1024] = {0}; 
 	if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) 
 	{ 
 		printf("\n Socket creation error \n"); 
 		return -1; 
 	} 
-
+	std::cout << "Reculus{CLIENT} : Secure Run" << std::endl;
 	serv_addr.sin_family = AF_INET; 
 	serv_addr.sin_port = htons(PORT); 
 	

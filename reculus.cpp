@@ -4,14 +4,7 @@
 // Copyright 2020 - 2025
 // This Server For Database Memory
 
-#include <unistd.h> 
-#include <stdio.h> 
-#include <sys/socket.h> 
-#include <stdlib.h> 
-#include <netinet/in.h> 
-#include <string>
-#include <cstring>
-#include <iostream>
+#include "header/reculus.hpp"
 
 #define PORT 6045
 
